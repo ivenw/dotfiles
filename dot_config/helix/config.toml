@@ -5,7 +5,7 @@ theme = "dracula"
 color-modes = true
 
 [editor.cursor-shape]
-insert = "bar"
+# insert = "bar"
 
 [editor.indent-guides]
 render = true

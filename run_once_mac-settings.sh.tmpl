@@ -1,0 +1,35 @@
+
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Finder
+# Always open everything in Finder's list view.
+defaults write com.apple.Finder FXPreferredViewStyle -string "Nlsv"
+
+# Show path bar
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+
+# Dock
+# Set position
+defaults write com.apple.dock "orientation" -string "left"
+
+# Set item size in px
+defaults write com.apple.dock "tilesize" -int "36"
+
+# TextEdit
+# Set default file type
+defaults write com.apple.TextEdit "RichText" -bool "false"
+
+# Screencapture
+# Save screenshots to the Downloads
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+
+{{ end -}}
