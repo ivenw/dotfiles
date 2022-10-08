@@ -6,3 +6,5 @@
 [user]
 	name = Iven Winkelmann
 	email = winkelmann.iven@gmail.com
+[init]
+	defaultBranch = main
