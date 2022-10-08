@@ -32,4 +32,8 @@ defaults write com.apple.TextEdit "RichText" -bool "false"
 # Save screenshots to the Downloads
 defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 
+# Kill affected apps
+killall Dock
+killall Finder
+
 {{ end -}}
