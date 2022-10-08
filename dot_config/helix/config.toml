@@ -1,0 +1,12 @@
+theme = "dracula"
+
+["editor"]
+# line-number = "relative"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+render = true
+character = "╎"

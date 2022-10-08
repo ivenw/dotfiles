@@ -1,0 +1,37 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+# general
+brew "git"
+brew "gh"
+brew "helix"
+
+# python dev
+brew "pyenv"
+brew "pipx"
+
+# rust dev
+brew "rust-analyzer"
+
+# cask cli
+tap "microsoft/git"
+cask "git-credential-manager-core"
+cask "1password-cli"
+
+# cask apps
+cask "alacritty"
+cask "1password"
+cask "visual-studio-code"
+cask "google-chrome"
+cask "slack"
+
+# cask fonts
+tap "homebrew/cask-fonts"
+cask "font-jetbrains-mono-nerd-font"
+
+# mas app
+mas "Amphetamine", id: 937984704
+
+EOF
+{{ end -}}
