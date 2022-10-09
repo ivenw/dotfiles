@@ -1,5 +1,5 @@
 {{- if eq .chezmoi.os "darwin" -}}
-#!/bin/bash
+#!/bin/sh
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
 # general
@@ -32,7 +32,7 @@ cask "font-jetbrains-mono-nerd-font"
 
 # mas app
 mas "Amphetamine", id: 937984704
-mas "Magent", id: 441258766
+mas "Magnet", id: 441258766
 
 EOF
 {{ end -}}
