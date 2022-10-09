@@ -17,6 +17,7 @@ plugins=(zsh-syntax-highlighting)
 
 # aliases
 alias moi=chezmoi
+alias reload="chezmoi apply && source ~/.zshrc"
 alias zsh-conf="chezmoi edit ~/.zshrc"
 alias git-conf="chezmoi edit ~/.gitconfig"
 alias hx-conf="chezmoi edit ~/.config/helix/config.toml"
