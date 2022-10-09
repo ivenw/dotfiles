@@ -8,3 +8,7 @@
 	email = winkelmann.iven@gmail.com
 [init]
 	defaultBranch = main
+[alias]
+	s = "status"
+	ca = "commit -am"
+	co = "checkout"
