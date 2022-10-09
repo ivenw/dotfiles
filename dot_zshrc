@@ -16,10 +16,10 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 plugins=(zsh-syntax-highlighting)
 
 # aliases
-alias cm=chezmoi
-alias zsh-config="chezmoi edit ~/.zshrc"
-alias omz-config="chezmoi edit ~/.oh-my-zsh"
-alias hx-config="chezmoi edit ~/.config/helix/config.toml"
+alias moi=chezmoi
+alias zsh-conf="chezmoi edit ~/.zshrc"
+alias git-conf="chezmoi edit ~/.gitconfig"
+alias hx-conf="chezmoi edit ~/.config/helix/config.toml"
 
 
 # Uncomment the following line to enable command auto-correction.
