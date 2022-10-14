@@ -8,5 +8,5 @@ font:
 
 window:
   padding:
-    x: 10
-    y: 5
+    x: 5
+    y: 0
