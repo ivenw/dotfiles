@@ -13,7 +13,10 @@ export EDITOR=hx
 
 zstyle ':omz:update' mode disabled  # disable automatic updates
 
-plugins=(poetry, zsh-syntax-highlighting)
+plugins=(
+  poetry
+  zsh-syntax-highlighting
+  )
 
 # aliases
 alias moi=chezmoi
