@@ -1,9 +1,10 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Poetry
 pipx install poetry
-mkdir $ZSH_CUSTOM/plugins/poetry
-poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+mkdir ~/.oh-my-zsh/custom/plugins/poetry
+poetry completions zsh > ~/.oh-my-zsh/custom/plugins/poetry/_poetry
 
+# pre-commit
 pipx install pre-commit
 pipx install python-lsp-server
