@@ -12,3 +12,5 @@
 	s = "status"
 	ca = "commit -am"
 	co = "checkout"
+[credential]
+	helper = manager-core
