@@ -23,4 +23,11 @@
     url = "https://github.com/romkatv/powerlevel10k.git"
     clone.args = ["--depth=1"]
     refreshPeriod = "168h"
+
+["Library/Keyboard Layouts/Colemak DH.bundle"]
+    type = "file"
+    url = "https://github.com/ColemakMods/mod-dh/archive/refs/heads/master.tar.gz"
+    ["Library/Keyboard Layouts/Colemak DH.bundle".filter]
+        command = "tar"
+        args = ["--extract", "--file", "/dev/stdin", "--gzip", "--to-stdout", "mod-dh-master/macOS/Colemak DH.bundle"]
     
