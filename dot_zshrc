@@ -1,13 +1,6 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export ZSH="$HOME/.oh-my-zsh" # oh-my-zsh installation path
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=""
 
 export EDITOR=hx
 
@@ -24,6 +17,8 @@ alias reload="chezmoi apply -v && source ~/.zshrc"
 alias zsh-conf="chezmoi edit ~/.zshrc"
 alias git-conf="chezmoi edit ~/.gitconfig"
 alias hx-conf="chezmoi edit ~/.config/helix/config.toml"
+alias ss-conf="chezmoi edit ~/.config/starship.toml"
+alias pcr="pre-commit run --all-files"
 
 
 # Uncomment the following line to enable command auto-correction.
@@ -42,9 +37,8 @@ alias hx-conf="chezmoi edit ~/.config/helix/config.toml"
 
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(pyenv init -)"
+eval "$(starship init zsh)"
 
 
 export PATH="$PATH:/Users/ivenwinkelmann/.local/bin:$PATH"

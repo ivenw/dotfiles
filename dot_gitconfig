@@ -13,5 +13,7 @@
 	c = "commit -m"
 	ca = "commit -am"
 	co = "checkout"
+	rpo = "remote prune origin"
 [credential]
 	helper = manager-core
+
