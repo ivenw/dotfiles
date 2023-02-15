@@ -13,7 +13,6 @@ brew "pipx"
 # rust dev
 brew "rust"
 brew "rust-analyzer"
-
 {{- if eq .chezmoi.os "darwin" -}}
 # cask cli
 tap "microsoft/git"
@@ -37,5 +36,4 @@ cask "font-jetbrains-mono-nerd-font"
 mas "Amphetamine", id: 937984704
 mas "Magnet", id: 441258766
 {{ end -}}
-
 EOF
