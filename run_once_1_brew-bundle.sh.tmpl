@@ -1,4 +1,3 @@
-{{- if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
@@ -12,8 +11,10 @@ brew "pyenv"
 brew "pipx"
 
 # rust dev
+brew "rust"
 brew "rust-analyzer"
 
+{{- if eq .chezmoi.os "darwin" -}}
 # cask cli
 tap "microsoft/git"
 cask "git-credential-manager-core"
@@ -35,6 +36,6 @@ cask "font-jetbrains-mono-nerd-font"
 # mas app
 mas "Amphetamine", id: 937984704
 mas "Magnet", id: 441258766
+{{ end -}}
 
 EOF
-{{ end -}}
