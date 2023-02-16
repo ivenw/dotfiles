@@ -1,6 +1,8 @@
 #!/bin/sh
+{{ if eq .chezmoi.osid "linux-ubuntu" }}
 
 sudo apt update
+sudo apt upgrade
 
 # Python build dependencies
 sudo apt install \
@@ -21,3 +23,5 @@ liblzma-dev
 
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+{{ end }}

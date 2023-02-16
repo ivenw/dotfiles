@@ -39,4 +39,4 @@ cask "font-jetbrains-mono-nerd-font"
 # mas app
 mas "Amphetamine", id: 937984704
 mas "Magnet", id: 441258766
-{{ end -}}
+{{- end -}}

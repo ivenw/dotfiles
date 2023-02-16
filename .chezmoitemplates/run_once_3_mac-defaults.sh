@@ -1,7 +1,7 @@
 
 #!/bin/sh
 
-{{- if eq .chezmoi.os "darwin" -}}
+{{ if eq .chezmoi.os "darwin" }}
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -37,4 +37,4 @@ defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 killall Dock
 killall Finder
 
-{{ end -}}
+{{ end }}
