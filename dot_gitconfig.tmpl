@@ -3,17 +3,26 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
 [user]
 	name = Iven Winkelmann
 	email = winkelmann.iven@gmail.com
+
 [init]
 	defaultBranch = main
+	
 [alias]
 	s = "status"
 	c = "commit -m"
 	ca = "commit -am"
 	co = "checkout"
 	rpo = "remote prune origin"
-[credential]
-	helper = manager-core
 
+[credential]
+{{- if eq .chezmoi.os "linux" }}
+{{-   if (.chezmoi.kernel.osrelease | lower | contains "microsoft") }}
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager-core.exe
+{{   end }}
+{{- else }}
+	helper = manager-core
+{{ end }}
