@@ -9,5 +9,5 @@ cursorline = true
 insert = "bar"
 
 [editor.indent-guides]
-render = true
-character = "╎"
+render = false
+character = "|"
