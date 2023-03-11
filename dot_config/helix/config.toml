@@ -1,7 +1,7 @@
 theme = "dracula"
 
 ["editor"]
-# line-number = "relative"
+line-number = "relative"
 color-modes = true
 cursorline = true
 
