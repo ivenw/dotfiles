@@ -1,7 +1,7 @@
 theme = "dracula"
 
 ["editor"]
-# line-number = "relative"
+line-number = "relative"
 color-modes = true
 cursorline = true
 
@@ -9,5 +9,5 @@ cursorline = true
 insert = "bar"
 
 [editor.indent-guides]
-render = true
-character = "╎"
+render = false
+character = "|"
