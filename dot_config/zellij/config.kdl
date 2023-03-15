@@ -1,3 +1,8 @@
+// Choose the theme that is specified in the themes section.
+// Default: default
+//
+theme "rose-pine"
+
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
     normal {
@@ -213,11 +218,6 @@ plugins {
 //   - false
 //
 // auto_layout true
-
-// Choose the theme that is specified in the themes section.
-// Default: default
-//
-theme "rose-pine"
 
 // The name of the default layout to load on startup
 // Default: "default"
