@@ -26,3 +26,6 @@ opt.smartcase = true
 
 -- cursorline
 opt.cursorline = true
+
+-- shorten timeoutlen
+opt.timeoutlen = 100
