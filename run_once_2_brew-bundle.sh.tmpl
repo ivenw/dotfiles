@@ -4,6 +4,7 @@ brew bundle --no-lock --file=/dev/stdin <<EOF
 # general
 brew "git"
 brew "gh"
+brew "nvim"
 brew "helix"
 brew "starship"
 brew "fd"
@@ -20,6 +21,10 @@ brew "rust-analyzer"
 #azure
 brew "azure-cli"
 {{- if eq .chezmoi.os "darwin" -}}
+
+# cask dev
+cask "dotnet"
+
 # cask cli
 tap "microsoft/git"
 cask "git-credential-manager-core"
