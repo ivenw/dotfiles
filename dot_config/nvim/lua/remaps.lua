@@ -13,3 +13,8 @@ km.set('n', '<leader>tn', ':tabnew<CR>')
 km.set('n', '<leader>tx', ':tabclose<CR>')
 km.set('n', 'K', ':tabnext<CR>')
 km.set('n', 'J', ':tabprevious<CR>')
+
+-- Plugins
+
+-- nvim-tree
+km.set('n', '<leader>f', ':NvimTreeToggle<CR>')

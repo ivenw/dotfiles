@@ -1,3 +1,4 @@
-require('plugins')
 require('vimconfig')
+require('plugins')
+require('remaps')
 

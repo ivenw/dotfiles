@@ -19,6 +19,7 @@ require('lazy').setup({
   { 'lukas-reineke/indent-blankline.nvim', opts = {} },
   { 'numToStr/Comment.nvim', opts = {} },
   { 'nvim-lualine/lualine.nvim', opts = {} },
+  { 'nvim-tree/nvim-tree.lua', opts = {} },
   { 'rose-pine/neovim', name = 'rose-pine', config = function() vim.cmd.colorscheme 'rose-pine' end },
   { 'ggandor/leap.nvim', dependencies = 'tpope/vim-repeat', config = function() require('leap').add_default_mappings() end },
 }, {})
