@@ -12,13 +12,17 @@ plugins=(
   )
 
 # aliases
+alias vim=nvim
 alias moi=chezmoi
 alias reload="chezmoi apply -v && source ~/.zshrc"
+alias pcr="pre-commit run --all-files"
+alias ls="exa --all"
+alias lsl="exa --all --long"
+
 alias zsh-conf="chezmoi edit ~/.zshrc"
 alias git-conf="chezmoi edit ~/.gitconfig"
 alias hx-conf="chezmoi edit ~/.config/helix/config.toml"
 alias ss-conf="chezmoi edit ~/.config/starship.toml"
-alias pcr="pre-commit run --all-files"
 
 
 # Uncomment the following line to enable command auto-correction.
