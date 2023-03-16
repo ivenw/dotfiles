@@ -22,4 +22,17 @@ require('lazy').setup({
   { 'nvim-tree/nvim-tree.lua', opts = {} },
   { 'rose-pine/neovim', name = 'rose-pine', config = function() vim.cmd.colorscheme 'rose-pine' end },
   { 'ggandor/leap.nvim', dependencies = 'tpope/vim-repeat', config = function() require('leap').add_default_mappings() end },
+  { -- LSP Configuration & Plugins
+    'neovim/nvim-lspconfig',
+    dependencies = {
+      -- Automatically install LSPs to stdpath for neovim
+      { 'williamboman/mason.nvim', opts = {} },
+      { 'williamboman/mason-lspconfig.nvim', opts = {} },
+
+      -- Useful status updates for LSP
+      { 'j-hui/fidget.nvim', opts = {} },
+
+      { 'folke/neodev.nvim', opts = {} },
+    },
+  },
 }, {})
