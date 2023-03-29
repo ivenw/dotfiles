@@ -3,8 +3,8 @@ local opt = vim.opt
 vim.g.loaded_netrw = 1
 vim.g.netrwPlugin = 1
 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Enable true colors
 opt.termguicolors = true
