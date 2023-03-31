@@ -1,4 +1,12 @@
 [[language]]
+name = "python"
+scope = "source.python"
+auto-format = true
+language-server = { command = "ruff-lsp" }
+config = { settings = { args = [] } }
+formatter = { command = "black", args = ["-"] }
+
+[[language]]
 name = "lua"
 auto-format = true
 formatter = { command = "stylua", args = ["-"] }

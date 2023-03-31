@@ -18,6 +18,7 @@ alias reload="chezmoi apply -v && source ~/.zshrc"
 alias pcr="pre-commit run --all-files"
 alias ls="exa --all"
 alias lsl="exa --all --long"
+alias "bicep-lsp"="dotnet ~/.local/bin/bicep-langserver/Bicep.LangServer.dll"
 
 alias zsh-conf="chezmoi edit ~/.zshrc"
 alias git-conf="chezmoi edit ~/.gitconfig"

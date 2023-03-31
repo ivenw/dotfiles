@@ -30,4 +30,10 @@
     ["Library/Keyboard Layouts/Colemak DH.bundle".filter]
         command = "tar"
         args = ["--extract", "--file", "/dev/stdin", "--gzip", "--to-stdout", "mod-dh-master/macOS/Colemak DH.bundle"]
+
+[".local/bicep-langserver"]
+    type = "archive"
+    url = "https://github.com/Azure/bicep/releases/latest/download/bicep-langserver.zip"
+    format = "zip"
+    refreshPeriod = "168h"
     
