@@ -1,13 +1,14 @@
-theme = "catppuccin_mocha"
+theme = "my-catppuccin"
 
-["editor"]
+[editor]
 line-number = "relative"
 color-modes = true
 cursorline = true
 
-[editor.cursor-shape]
-insert = "bar"
-
 [editor.indent-guides]
 render = false
 character = "|"
+
+[editor.lsp]
+display-inlay-hints = true
+
