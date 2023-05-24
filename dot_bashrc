@@ -125,6 +125,7 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 eval "$(starship init bash)"
 eval "$(register-python-argcomplete pipx)"
 
