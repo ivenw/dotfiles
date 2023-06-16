@@ -45,5 +45,7 @@ eval "$(pyenv init -)"
 eval "$(starship init zsh)"
 
 
+export JAVA_HOME="/usr/local/Cella/usr/local/Cellar/openjdk@8/1.8.0+372/libexec/openjdk.jdk/Contents/Homer"
+
 export PATH="$PATH:/Users/ivenwinkelmann/.local/bin:$PATH"
-export PATH="$PATH:/Users/ivenwinkelmann/.cargo/bin:$PATH"
+export PATH="$PATH:/Users/ivenwinkelmann/.cargo/bin:$PATH" 
