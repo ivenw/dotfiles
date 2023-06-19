@@ -2,6 +2,7 @@
 // Default: default
 //
 theme "catppuccin-macchiato"
+default_layout "disable-status-bar"
 
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
@@ -180,9 +181,15 @@ keybinds {
 
 plugins {
     tab-bar { path "tab-bar"; }
-    // status-bar { path "status-bar"; }
+    status-bar { path "status-bar"; }
     strider { path "strider"; }
     compact-bar { path "compact-bar"; }
+}
+
+ui {
+    pane_frames {
+        rounded_corners false
+    }
 }
 
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
