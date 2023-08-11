@@ -2,7 +2,7 @@
 // Default: default
 //
 theme "catppuccin-macchiato"
-default_layout "disable-status-bar"
+default_layout "bottom-status-bar"
 
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
